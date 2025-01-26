@@ -1,0 +1,668 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playwrite AU SA", serif;
+    overflow-x: hidden;
+}
+
+.one {
+    width: inherit;
+    height: 1000px;
+}
+
+footer {
+    width: inherit;
+    height: 900px;
+}
+
+.intro {
+    width: inherit;
+    height: 650px;
+}
+
+.two {
+    width: inherit;
+    height: 2000px;
+}
+
+
+
+/*end rules*/
+/*start nav*/
+
+.intro {
+    background-image: url(./imgs/img/antique-cafe-bg-01.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.intro nav {
+    width: 1360px;
+    height: 10%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.418);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    z-index: 1000;
+}
+
+.intro nav .one .head nav .logo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.intro nav .logo img {
+    width: 50px;
+    margin-left: 50px;
+}
+
+.intro nav .links {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.intro nav .links ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.intro nav .links ul li {
+    list-style: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+}
+
+.intro nav .links ul li:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.intro nav .links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.intro .intro-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+
+/*end nav*/
+/*start head section*/
+
+.one {
+    background-image: url(./imgs/img/antique-cafe-bg-04.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.one .head {
+    width: 1360px;
+    height: inherit;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.one .head .center-item {
+    width: 90%;
+    height: 80%;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+.one .head .center-item .poster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.one .head .center-item .poster h1 {
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+.one .head .center-item .text {
+    padding: 20px;
+}
+
+.one .head .center-item .text p {
+    font-size: 12px;
+    color: white;
+}
+
+.one .head .center-item .text p span {
+    font-size: 20px;
+}
+
+/*end head section*/
+/*start menu section*/
+
+
+.two {
+    background-image: url(./imgs/img/pexels-freestocks-213621.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.two .menu {
+    width: 1360px;
+    height: inherit;
+    margin: auto;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.two .menu .title {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two .menu .title h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: white;
+    text-shadow: 0 0 20px black;
+}
+
+.two .menu .dessert-menu,
+.two .menu .drinks-menu {
+    width: 100%;
+    height: 42.5%;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.527);
+    position: relative;
+}
+
+.two .menu .dessert-menu::before,
+.two .menu .drinks-menu::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -100px;
+    left: 550px;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.527);
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-width: 50px;
+}
+
+.two .menu .dessert-menu .order-box-one,
+.two .menu .dessert-menu .order-box-two {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.two .menu .dessert-menu #border {
+    border-radius: 45px 45px 0 0;
+}
+
+
+.two .menu .dessert-menu .order-box-one img,
+.two .menu .dessert-menu .order-box-two img {
+    width: 25%;
+    border-radius: 45px;
+}
+
+
+.two .menu .dessert-menu .order-box-one p,
+.two .menu .dessert-menu .order-box-two p {
+    font-size: 12px;
+    width: 60%;
+    color: white;
+}
+
+.two .menu .dessert-menu .order-box-two p {
+    direction: rtl;
+}
+
+.two .menu .dessert-menu .order-box-one p span,
+.two .menu .dessert-menu .order-box-two p span {
+    font-size: 20px;
+}
+
+.two .menu .dessert-menu .order-box-one p #price,
+.two .menu .dessert-menu .order-box-two p #price {
+    color: red;
+    font-size: 10px;
+}
+
+.two .menu .dessert-menu .order-box-one a,
+.two .menu .dessert-menu .order-box-two a {
+    text-decoration: none;
+    font-size: 25px;
+    color: yellow;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.two .menu .dessert-menu .order-box-one a:hover,
+.two .menu .dessert-menu .order-box-two a:hover {
+    color: white;
+}
+
+.two .menu .drinks-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.two .menu .drinks-menu .box1,
+.two .menu .drinks-menu .box2,
+.two .menu .drinks-menu .box3,
+.two .menu .drinks-menu .box4,
+.two .menu .drinks-menu .box5,
+.two .menu .drinks-menu .box6,
+.two .menu .drinks-menu .box7,
+.two .menu .drinks-menu .box8,
+.two .menu .drinks-menu .box9 {
+    width: 32%;
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: inherit;
+    overflow: hidden;
+}
+
+.two .menu .drinks-menu .box1 {
+    background-image: url(./imgs/img/1.jpg);
+    background-size: cover;
+}
+
+.two .menu .drinks-menu .box1:hover,
+.two .menu .drinks-menu .box2:hover,
+.two .menu .drinks-menu .box3:hover,
+.two .menu .drinks-menu .box4:hover,
+.two .menu .drinks-menu .box5:hover,
+.two .menu .drinks-menu .box6:hover,
+.two .menu .drinks-menu .box7:hover,
+.two .menu .drinks-menu .box8:hover,
+.two .menu .drinks-menu .box9:hover {
+    width: 33%;
+    height: 33%;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px black;
+    transition: 1.0s;
+}
+
+.two .menu .drinks-menu .box2 {
+    background-image: url(./imgs/img/2.jpg);
+    background-size: cover;
+}
+
+.two .menu .drinks-menu .box3 {
+    background-image: url(./imgs/img/3.jpg);
+    background-size: cover;
+}
+
+.two .menu .drinks-menu .box4 {
+    background-image: url(./imgs/img/4.jpg);
+    background-size: cover;
+}
+
+.two .menu .drinks-menu .box5 {
+    background-image: url(./imgs/img/5.jpg);
+    background-size: cover;
+}
+
+.two .menu .drinks-menu .box6 {
+    background-image: url(./imgs/img/6.jpg);
+    background-size: cover;
+}
+
+.two .menu .drinks-menu .box7 {
+    background-image: url(./imgs/img/7.jpg);
+    background-size: cover;
+}
+
+.two .menu .drinks-menu .box8 {
+    background-image: url(./imgs/img/8.jpg);
+    background-size: cover;
+}
+
+.two .menu .drinks-menu .box9 {
+    background-image: url(./imgs/img/9.jpg);
+    background-size: cover;
+}
+
+.two .menu .drinks-menu .box1 .name-price,
+.two .menu .drinks-menu .box2 .name-price,
+.two .menu .drinks-menu .box3 .name-price,
+.two .menu .drinks-menu .box4 .name-price,
+.two .menu .drinks-menu .box5 .name-price,
+.two .menu .drinks-menu .box6 .name-price,
+.two .menu .drinks-menu .box7 .name-price,
+.two .menu .drinks-menu .box8 .name-price,
+.two .menu .drinks-menu .box9 .name-price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+.two .menu .drinks-menu .box1 .name-price h3,
+.two .menu .drinks-menu .box2 .name-price h3,
+.two .menu .drinks-menu .box3 .name-price h3,
+.two .menu .drinks-menu .box4 .name-price h3,
+.two .menu .drinks-menu .box5 .name-price h3,
+.two .menu .drinks-menu .box6 .name-price h3,
+.two .menu .drinks-menu .box7 .name-price h3,
+.two .menu .drinks-menu .box8 .name-price h3,
+.two .menu .drinks-menu .box9 .name-price h3 {
+    font-size: 15px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.two .menu .drinks-menu .box1 .name-price p,
+.two .menu .drinks-menu .box2 .name-price p,
+.two .menu .drinks-menu .box3 .name-price p,
+.two .menu .drinks-menu .box4 .name-price p,
+.two .menu .drinks-menu .box5 .name-price p,
+.two .menu .drinks-menu .box6 .name-price p,
+.two .menu .drinks-menu .box7 .name-price p,
+.two .menu .drinks-menu .box8 .name-price p,
+.two .menu .drinks-menu .box9 .name-price p {
+    font-size: 10px;
+    text-transform: capitalize;
+    color: white;
+}
+
+.two .menu .drinks-menu .box1 .name-price p span,
+.two .menu .drinks-menu .box2 .name-price p span,
+.two .menu .drinks-menu .box3 .name-price p span,
+.two .menu .drinks-menu .box4 .name-price p span,
+.two .menu .drinks-menu .box5 .name-price p span,
+.two .menu .drinks-menu .box6 .name-price p span,
+.two .menu .drinks-menu .box7 .name-price p span,
+.two .menu .drinks-menu .box8 .name-price p span,
+.two .menu .drinks-menu .box9 .name-price p span {
+    color: red;
+}
+
+.two .menu .drinks-menu .box1 .order,
+.two .menu .drinks-menu .box2 .order,
+.two .menu .drinks-menu .box3 .order,
+.two .menu .drinks-menu .box4 .order,
+.two .menu .drinks-menu .box5 .order,
+.two .menu .drinks-menu .box6 .order,
+.two .menu .drinks-menu .box7 .order,
+.two .menu .drinks-menu .box8 .order,
+.two .menu .drinks-menu .box9 .order {
+    width: 100%;
+    height: 20%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.two .menu .drinks-menu .box1:hover .order,
+.two .menu .drinks-menu .box2:hover .order,
+.two .menu .drinks-menu .box3:hover .order,
+.two .menu .drinks-menu .box4:hover .order,
+.two .menu .drinks-menu .box5:hover .order,
+.two .menu .drinks-menu .box6:hover .order,
+.two .menu .drinks-menu .box7:hover .order,
+.two .menu .drinks-menu .box8:hover .order,
+.two .menu .drinks-menu .box9:hover .order {
+    visibility: visible;
+}
+
+.two .menu .drinks-menu .box1 .order a,
+.two .menu .drinks-menu .box2 .order a,
+.two .menu .drinks-menu .box3 .order a,
+.two .menu .drinks-menu .box4 .order a,
+.two .menu .drinks-menu .box5 .order a,
+.two .menu .drinks-menu .box6 .order a,
+.two .menu .drinks-menu .box7 .order a,
+.two .menu .drinks-menu .box8 .order a,
+.two .menu .drinks-menu .box9 .order a {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 80%;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.530);
+}
+
+
+/*end menu section*/
+/*start footer*/
+
+
+footer {
+    background-image: url(./imgs/img/antique-cafe-bg-03.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.continer {
+    width: 1360px;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 100px;
+}
+
+
+.continer .left-box,
+.continer .right-box {
+    width: 99%;
+    padding: 5%;
+    border-radius: 20px;
+}
+
+.continer .left-box {
+    background-color: rgba(255, 255, 255, 0.699);
+}
+
+.continer .left-box h2 {
+    padding-bottom: 15px;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: #006666;
+}
+
+.continer .left-box p {
+    padding-bottom: 50px;
+}
+
+.continer .left-box p::first-letter {
+    font-size: 30px;
+}
+
+.continer .left-box .btn {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.continer .left-box .btn a,
+.continer .left-box .btn button {
+    width: 49%;
+    font-family: "Playwrite AU SA", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: #006666;
+    border: unset;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.continer .left-box .btn a {
+    text-decoration: none;
+}
+
+.continer .left-box .btn a img,
+.continer .left-box .btn button img {
+    width: 30px;
+    margin-right: 1px;
+}
+
+.continer .right-box {
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+.continer .right-box form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.continer .right-box form input,
+.continer .right-box form .btn {
+    width: 100%;
+    height: 15%;
+    padding: unset;
+}
+
+.continer .right-box form textarea {
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+    border: unset;
+    outline: unset;
+    border-bottom: 1px solid orange;
+}
+
+.continer .right-box form input {
+    background-color: transparent;
+    border: unset;
+    outline: unset;
+    border-bottom: 1px solid orange;
+}
+
+.continer .right-box form textarea:focus,
+.continer .right-box form input:focus {
+    border: 1px solid orange;
+    box-shadow: 0 0 15px orange;
+}
+
+.continer .right-box form textarea::placeholder,
+.continer .right-box form input::placeholder {
+    text-transform: capitalize;
+    padding: 20px 0 0 20px;
+    font-size: 15px;
+    color: white;
+}
+
+
+
+.continer .right-box form .btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.continer .right-box form .btn button {
+    font-size: 18px;
+    margin-right: 20px;
+    border: unset;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.continer .right-box form .btn button:hover {
+    color: orange;
+    transition: 0.5s;
+}
+
+.by {
+    width: 1360px;
+    height: 10%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.527);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.by h2 {
+    text-transform: uppercase;
+    color: #006666;
+}
+
+.by ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+}
+
+.by ul li {
+    list-style: none;
+}
+
+.by ul li a img {
+    padding: 5px;
+    background-color: #006666;
+    border-radius: 50%;
+}
+
+.by ul li a img:hover {
+    padding: unset;
+    background-color: transparent;
+    width: 40px;
+    transition: 0.5s;
+}
+
+/*end footer*/
